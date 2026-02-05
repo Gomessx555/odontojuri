@@ -1,0 +1,57 @@
+.sobre {
+    background-color: #0e0e0e;
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-size: 5vh;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.sobre .descricao {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: #ccc;
+    font-size: 20px;
+}
+
+.sobre-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.box {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.box h3 {
+    color: #d4af37;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.box p {
+    color: #bbb;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .sobre-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .sobre-boxes {
+        grid-template-columns: 1fr;
+    }
+}
